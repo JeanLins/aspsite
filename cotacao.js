@@ -115,3 +115,32 @@ function hideLoading() {
   var loadingOverlay = document.getElementById('loadingOverlay')
   loadingOverlay.style.display = 'none'
 }
+
+
+// SETA - SIGA-ME
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const botaoAlvo = document.getElementById('botao-alvo');
+  const seta = document.getElementById('caixa-seta');
+
+  function atualizarPosicaoSeta() {
+    const botaoAlvoRect = botaoAlvo.getBoundingClientRect();
+    const topPosition = botaoAlvoRect.bottom + window.scrollY + 20; // Ajuste conforme necessário
+    seta.style.top = topPosition + 'px';
+    seta.style.left = botaoAlvoRect.left + window.scrollX + (botaoAlvoRect.width / 6) + 'px';
+  }
+
+  function inicializarPosicaoSeta() {
+    setTimeout(atualizarPosicaoSeta, 100); // Aguardar 100 milissegundos para garantir que o conteúdo seja carregado
+  }
+
+  // Inicializar posição
+  inicializarPosicaoSeta();
+
+  // Atualizar posição quando a janela for redimensionada
+  window.addEventListener('resize', inicializarPosicaoSeta);
+
+  // Atualizar posição quando o conteúdo for totalmente carregado (sem esperar pelo primeiro scroll)
+  window.addEventListener('load', inicializarPosicaoSeta);
+});

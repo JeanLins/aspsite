@@ -39,7 +39,7 @@ body {
 }
 
 body {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 1.6rem;
 
   text-align: center;
@@ -113,7 +113,6 @@ body.no-scroll {
 .pdf-button {
   color: white;
   text-decoration: underline;
-  
 }
 
 .pdf-button:hover {
@@ -233,12 +232,12 @@ section .content p {
   fill: var(--orange-asp);
 }
 
-#navigation .logo path[fill*='#00856F'],
+#navigation .logo path[fill*="#00856F"],
 #backToTopButton circle {
   fill: var(--primary-color);
 }
 
-button.open-menu path[stroke*='#00856F'],
+button.open-menu path[stroke*="#00856F"],
 #contact li path {
   stroke: var(--primary-color);
 }
@@ -248,7 +247,7 @@ body.menu-expanded #navigation .logo path,
   fill: white;
 }
 
-#navigation.scroll button.open-menu path[stroke*='#00856F'] {
+#navigation.scroll button.open-menu path[stroke*="#00856F"] {
   stroke: white;
 }
 
@@ -390,7 +389,7 @@ body.menu-expanded button path {
 }
 
 #home::before {
-  content: '';
+  content: "";
   width: 100%;
   height: calc(76% + var(--nav-height));
   background-color: var(--brand-light);
@@ -453,12 +452,19 @@ body.menu-expanded button path {
 }
 
 /*=== SERVICES =================================*/
+
+#destaque {
+  color: var(--orange-asp);
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
 #services .card p {
   text-align: justify;
 }
 
 #services header h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 
 #services .cards {
@@ -477,7 +483,7 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-#services .card h3 {
+#services .card h2 {
   margin-block: 1.6rem;
 }
 
@@ -724,7 +730,7 @@ footer .social-links {
   }
 
   nav#navigation .menu li a::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background-color: var(--primary-color);
@@ -773,8 +779,8 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-      'A B'
-      'C C';
+      "A B"
+      "C C";
   }
 
   #home .col-a {
@@ -822,7 +828,7 @@ footer .social-links {
 
   #services .cards {
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 4rem;
   }
 
@@ -836,14 +842,10 @@ footer .social-links {
     color: inherit;
   }
 
-  #icone-card {
-    max-width: 30%;
-  }
-
   /*=== ABOUT =================================*/
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
-    grid-template-areas: 'B A';
+    grid-template-areas: "B A";
     gap: 6.7rem;
   }
 
@@ -860,7 +862,7 @@ footer .social-links {
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: 'A B';
+    grid-template-areas: "A B";
   }
 
   #contact h2 {
@@ -874,7 +876,7 @@ footer .social-links {
 
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'A B';
+    grid-template-areas: "A B";
   }
 
   footer .col-a {
@@ -896,8 +898,6 @@ footer .social-links {
   footer p {
     margin-bottom: 0;
   }
-
- 
 }
 
 @media screen and (max-width: 1024px) {
@@ -905,5 +905,234 @@ footer .social-links {
     max-width: none; /* Remover a largura máxima */
     width: 100%; /* Ocupar a largura total da tela */
     margin: 0; /* Remover margens */
+  }
+}
+
+/* POPUP PRINCIPAL SMARTPHONE */
+
+@media screen and (max-width: 1023px) {
+  .custom-popup h2 {
+    position: fixed;
+    color: rgb(68, 0, 255);
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 10005;
+    font-size: 2rem;
+  }
+
+  .custom-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 9999; /* Ajustado o valor do z-index para garantir que o popup esteja acima de outros elementos */
+  }
+
+  .custom-popup-content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--brand-beige);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 10000; /* Ajustado o valor do z-index para garantir que o conteúdo do popup esteja acima do fundo */
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--brand-beige);
+    z-index: 10001; /* Ajustado o valor do z-index para garantir que o botão de fechar esteja acima do conteúdo do popup */
+  }
+
+  #services-interno {
+    text-align: justify;
+
+
+    max-height: 60vh;
+    max-width: 50vh;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  #services-interno .cards {
+    min-width: 30vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 3.2rem;
+  }
+
+  #services-interno .card {
+    max-width: 30vh;
+    width: 100%;
+    flex-grow: 1;
+    padding: 1.4rem;
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid var(--orange-asp);
+    border-radius: 0.6rem;
+  }
+
+  #services-interno .card #icone-card{
+    max-width: 20%;
+  }
+
+  #services-interno .card p {
+    text-align: justify;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #services-interno .card h3 {
+    
+    font-size: 1.2rem;
+  }
+}
+
+/* POPUP PRINCIPAL DESKTOP */
+
+@media screen and (min-width: 1024px) {
+  .custom-popup h2 {
+    position: fixed;
+    color: red;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+  }
+  .custom-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 9999;
+  }
+
+  .custom-popup-content {
+    display: flex;
+    min-width: 106vh;
+    min-height: 80vh;
+    max-height: 90vh;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--brand-beige);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    z-index: 10000;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--brand-beige);
+    z-index: 10001;
+  }
+
+  #services-interno {
+    display: flex;
+  }
+
+  #services-interno .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #services-interno .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    margin: 2rem;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  #services-interno .card {
+    flex-basis: 30%;
+
+    padding: 1.4rem;
+
+    background: white;
+    border: 1px solid var(--orange-asp);
+    border-radius: 0.6rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #services-interno .card p {
+    text-align: justify;
+    padding-top: 1rem;
+  }
+
+  #services-interno .card img {
+    max-width: 30%;
+  }
+}
+
+/* POPUP PRINCIPAL */
+
+@media screen and (min-width: 1024px) {
+  #customPopup2 .custom-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 9999;
+  }
+
+  #customPopup2 .custom-popup-content {
+    display: flex;
+    min-width: 106vh;
+    min-height: 40vh;
+    max-height: 90vh;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--brand-beige);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    z-index: 10000;
+  }
+
+  #customPopup2 .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--brand-beige);
+    z-index: 10001;
   }
 }

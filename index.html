@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aqui você encontrará as melhores opções em seguros, especialmente para professores e funcionários da secretaria da edução que contam com descontos exclusivos com a ASP Corretora, a melhor condição você encontrará aqui, atendemos todas seguradoras."
+    />
     <title>Assessoria de Seguro ao Professor</title>
 
     <link rel="stylesheet" href="./style.css" />
@@ -13,9 +17,363 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./aspfavicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon2.png" type="image/png" />
   </head>
   <body onscroll="onScroll()">
+    <!-- CARDS POPUP -->
+
+    <div class="custom-popup" id="customPopup1">
+      <h2>Clique para começar a sua cotação!</h2>
+      <div class="custom-popup-content">
+        <div id="services-interno">
+          <div class="content">
+            <div class="cards">
+              <a
+                href="./cotacao_residencial.html"
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-casa-residencial.png"
+                    alt="Fundo laranja com desenho de casa escrito residencial seguro de casa, residencia."
+                  />
+
+                  <h3>Seguro Residencial</h3>
+                  <p>
+                    Seguro residencial garante proteção contra danos, roubo e
+                    imprevistos, assegurando tranquilidade para sua família
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20seguro%20empresarial."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-seguro-empresarial.png"
+                    alt="Fundo laranja com desenho de prédios, representando seguro empresarial"
+                  />
+
+                  <h3>Seguro Empresarial</h3>
+                  <p>
+                    Proteja seu negócio com seguro empresarial, garantindo
+                    tranquilidade para focar no crescimento e proteção contra
+                    imprevistos.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20seguro%20condominio."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-seguro-condominio.png"
+                    alt="Fundo laranja com desenho de um condomínio com pessoas na frente, seguro condomínio."
+                  />
+
+                  <h3>Seguro Condomínio</h3>
+                  <p>
+                    Seguro especializado protege condomínios, garantindo
+                    tranquilidade, preservação do patrimônio e segurança
+                    abrangente para moradores.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://wwws.portoseguro.com.br/vendaonline/equipamentosportateis/home.ns?codigoOperacao=20&amp;susepw=8816WJ"
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-celular-equipamentos-portateis.png"
+                    alt="Fundo laranja com desenho de smartphone, celular, iphone escrito equipamentos portateis seguro de celualr, smartphone, camera e outros."
+                  />
+
+                  <h3>Equipamentos Portáteis</h3>
+                  <p>
+                    Seguro especializado protege equipamentos portáteis contra
+                    danos, roubo e imprevistos, garantindo operações sem
+                    preocupações.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20seguro%20fiança."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-seguro-fianca-locaticia.png"
+                    alt="Fundo laranja com desenho de uma chave, representando seguro fiança e outros meios de segurança na contratação de uma casa alugada."
+                  />
+
+                  <h3>Seguro Fiança</h3>
+                  <p>
+                    Garanta segurança locatícia com seguro fiança. Proteja o
+                    proprietário e o inquilino contra riscos financeiros,
+                    facilitando contratos de aluguel.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20seguros."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-seguros-diversos.png"
+                    alt="Fundo laranja com desenhos diversos, representando a gama de serviços que oferecemos."
+                  />
+
+                  <h3>Diversos</h3>
+                  <p>
+                    A gama de seguros que oferecemos é enorme para você se
+                    proteger e proteger seu bem, entre em contato conosco e
+                    consulte!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="close-btn" onclick="closeCustomPopup('customPopup1')"
+        >X</span
+      >
+    </div>
+
+    <div class="custom-popup" id="customPopup2">
+      <h2>Clique para começar a sua cotação!</h2>
+      <div class="custom-popup-content">
+        <div id="services-interno">
+          <div class="content">
+            <div class="cards">
+              <a href="./cotacao_vida.html" class="card" id="card-clicavel">
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-coracao-vida.png"
+                    alt="Fundo laranja com desenho de um coração batendo, siginificando seguro de vida!"
+                  />
+
+                  <h3>Seguro de Vida</h3>
+                  <p>
+                    Proteja sua família e garanta tranquilidade de um futuro com
+                    o seguro de vida. Oferecemos cobertura abrangente para
+                    cuidar dos seus entes queridos em momentos difíceis.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20seguro%20viagem."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-boneco-mala-viagem.png"
+                    alt="Fundo laranja com desenho de um boneco carregando carregando uma mala, seguro viagem."
+                  />
+
+                  <h3>Seguro Viagem</h3>
+                  <p>
+                    Viaje com segurança com o seguro viagem. Tenha cobertura
+                    completa para imprevistos médicos, perda de bagagem e outros
+                    contratempos durante sua jornada.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20planos%20de%20saude."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-plano-saude-seguro-saude.png"
+                    alt="Fundo laranja com desenho de um estetoscopio representando planos de saúde."
+                  />
+
+                  <h3>Plano de saúde</h3>
+                  <p>
+                    Cuide da sua saúde com tranquilidade através do plano de
+                    saúde quais podemos oferecer. Tenha acesso a uma ampla rede
+                    de médicos e hospitais, garantindo o melhor cuidado para
+                    você e sua família.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="close-btn" onclick="closeCustomPopup('customPopup2')"
+        >X</span
+      >
+    </div>
+
+    <div class="custom-popup" id="customPopup3">
+      <h2>Clique para começar a sua cotação!</h2>
+      <div class="custom-popup-content">
+        <div id="services-interno">
+          <div class="content">
+            <div class="cards">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20financiamento."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-financiamento.png"
+                    alt="Fundo laranja com desenho de uma mão com uma moeda, siginificando financiamento."
+                  />
+
+                  <h3>Financiamento</h3>
+                  <p>
+                    Realize seus projetos com o financiamento Porto Seguros.
+                    Oferecemos soluções flexíveis e acessíveis para tornar seus
+                    planos uma realidade, com condições que se encaixam no seu
+                    orçamento.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20refinanciamento%20de%20veiculos."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-refinanciamento-auto.png"
+                    alt="Fundo laranja com desenho de um veículo e um cifrao logo em cima, simbolizando refinanciamento de veículos"
+                  />
+
+                  <h3>Refinanciamento de veículos</h3>
+                  <p>
+                    Otimize suas finanças com o refinanciamento de veículos.
+                    Obtenha melhores condições de pagamento e libere o valor do
+                    seu carro para investir em outros projetos.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20consórcio%20de%20veiculos."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-consorcio-auto.png"
+                    alt="Fundo laranja com desenho de um carro, com uma calculadora no fundo, representando consórcio automóvel"
+                  />
+
+                  <h3>Consórcio Automóvel</h3>
+                  <p>
+                    Realize o sonho do carro novo com o consórcio automóvel.
+                    Planos flexíveis e sem juros para você conquistar seu
+                    veículo de forma planejada e econômica.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20consórcio%20de%20imóveis."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-consorcio-imoveis.png"
+                    alt="Fundo laranja com desenho de uma casa com um simbolo de cifrao, simbolizando consórcio de imóveis."
+                  />
+
+                  <h3>Consórcio Imóveis</h3>
+                  <p>
+                    Realize o sonho da casa própria com o consórcio imobiliário.
+                    Planos flexíveis e sem juros para você conquistar seu imóvel
+                    de forma planejada e econômica.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20crédito%20pessoal."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-credito-pessoal.png"
+                    alt="Fundo laranja com desenho de duas mãos com saco de dinheiro, simbolizando crédito pessoal"
+                  />
+
+                  <h3>Crédito Pessoal</h3>
+                  <p>
+                    Obtenha apoio financeiro com o crédito pessoal Porto Seguro.
+                    Condições flexíveis e atendimento personalizado para
+                    realizar seus projetos e alcançar seus objetivos sem
+                    preocupações.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511950089099&text=Ol%C3%A1%20gostaria%20de%20falar%20sobre%20crédito%20com%20garantia%20de%20imovel."
+                class="card"
+                id="card-clicavel"
+              >
+                <div>
+                  <img
+                    id="icone-card"
+                    src="./assets/fundo-laranja-desenho-credito-garantia-imovel.png"
+                    alt="Fundo laranja com desenho de uma casa duas setas e um cifrao, simbolizando crédito com garantia de imóvel."
+                  />
+
+                  <h3>Crédito garantia de imóvel</h3>
+                  <p>
+                    Garanta crédito utilizando seu imóvel como garantia. Com o
+                    crédito garantia de imóvel, tenha acesso a condições
+                    vantajosas para realizar seus projetos e conquistar seus
+                    objetivos financeiros.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="close-btn" onclick="closeCustomPopup('customPopup3')"
+        >X</span
+      >
+    </div>
+
+    <!-- CARDS POPUP -->
+
     <nav id="navigation">
       <div class="wrapper">
         <a class="logo" href="#home">
@@ -170,7 +528,7 @@
               educação tem vantagens exclusivas, além de serem extensivos a
               cônjuge, filhos ou pais.
             </p>
-            <a class="button" href="#contact"> Faça uma cotação </a>
+            <a class="button" href="#services"> Faça uma cotação </a>
           </div>
         </div>
 
@@ -182,18 +540,18 @@
         </div>
 
         <div class="stats">
-          <div class="stat">
-            <h3>+20.000</h3>
+          <div class="stat" id="clientesStat">
+            <h3>+0</h3>
             <p>Clientes satisfeitos</p>
           </div>
 
-          <div class="stat">
-            <h3>+40</h3>
+          <div class="stat" id="especialistasStat">
+            <h3>+0</h3>
             <p>Especialistas disponíveis</p>
           </div>
 
-          <div class="stat">
-            <h3>+30</h3>
+          <div class="stat" id="anosStat">
+            <h3>+0</h3>
             <p>Anos no mercado</p>
           </div>
         </div>
@@ -204,7 +562,8 @@
       <div class="wrapper">
         <header>
           <h4>Serviços</h4>
-          <h2>Alguns tipos de seguro que comercializamos.</h2>
+          <h2>Alguns tipos de seguros que comercializamos.</h2>
+          <h3 id="destaque">Clique para começar a sua cotação!</h3>
         </header>
 
         <div class="content">
@@ -219,70 +578,80 @@
 
                 <h3>Seguro Automóvel</h3>
                 <p>
-                  Aqui comercializamos os seguros de todas as companhias,
-                  visando encontrar o melhor custo-benefício para nossos
-                  clientes.
+                  Proteja seu veículo, contamos com seguros de todas as
+                  companhias, visando encontrar o melhor custo-benefício para
+                  nossos clientes. Além de um atendimento especializado para
+                  auxiliar o atendimentos em eventualidades.
                 </p>
               </div>
             </a>
             <a
-              href="./cotacao_residencial.html"
+              onclick="openCustomPopup('customPopup1')"
               class="card"
               id="card-clicavel"
             >
               <div>
                 <img
                   id="icone-card"
-                  src="./assets/fundo-laranja-desenho-casa-residencial.png"
-                  alt="Fundo laranja com desenho de casa escrito residencial seguro de casa, residencia."
+                  src="./assets/fundo-laranja-seguro-ramos-elementares.png"
+                  alt="Fundo laranja com as letras R E, quais representam os ramos elementares, todo tipo de seguro para bens como residencia, celular e corporativo por exemplo."
                 />
 
-                <h3>Seguro Residencial</h3>
+                <h3>Ramos Elementares</h3>
                 <p>
-                  Uma prioridade quando o assunto é assegurar o seu patrimônio,
-                  contamos com uma equipe especializada visando sempre o seu
-                  bem-estar!
+                  Contamos com uma ampla gama de seguros de ramos elementares,
+                  entre eles, seguro residencial, dispositivos portáteis,
+                  empresarial e muito mais. Proteja o que é importante para você
+                  com a nossa expertise em seguros!
                 </p>
               </div>
             </a>
-            <a href="./cotacao_vida.html" class="card" id="card-clicavel">
-              <div>
-                <img
-                  id="icone-card"
-                  src="./assets/fundo-laranja-desenho-coracao-vida.png"
-                  alt="Fundo laranja com desenho de coração escrito vida seguro de vida, investimento no futuro."
-                />
 
-                <h3>Seguro de Vida</h3>
-                <p>
-                  Cuidar de quem você ama também é cuidar de si, oferecemos uma
-                  consultoria especializada para contratar o melhor seguro
-                  visando a segurança de quem você ama!
-                </p>
-              </div>
-            </a>
             <a
-              href="https://wwws.portoseguro.com.br/vendaonline/equipamentosportateis/home.ns?codigoOperacao=20&amp;susepw=8816WJ"
+              onclick="openCustomPopup('customPopup2')"
               class="card"
               id="card-clicavel"
-              target="_blank"
             >
               <div>
                 <img
                   id="icone-card"
-                  src="./assets/fundo-laranja-desenho-celular-equipamentos-portateis.png"
+                  src="./assets/fundo-laranja-desenho-seguros.png"
+                  alt="Fundo laranja com desenho de um escudo de proteção, qual representa os seguros pessoais, seguros feitos para proteger sua saúde vida e futuro!"
+                />
+
+                <h3>Seguros Pessoais</h3>
+                <p>
+                  Para proteger você e sua família, contamos com os mais
+                  abrangentes seguros pessoais, seguro de vida para proteger o
+                  futuro de quem você ama, seguro-viagem para aventuras
+                  tranquilas, e plano de saúde para ter uma vida tranquila com
+                  qualidade e segurança.
+                </p>
+              </div>
+            </a>
+            <a
+              onclick="openCustomPopup('customPopup3')"
+              class="card"
+              id="card-clicavel"
+            >
+              <div>
+                <img
+                  id="icone-card"
+                  src="./assets/fundo-laranja-desenho-servicos-financeiros.png"
                   alt="Fundo laranja com desenho de smartphone, celular, iphone escrito equipamentos portateis seguro de celualr, smartphone, camera e outros."
                 />
 
-                <h3>Esquipamentos portáteis</h3>
+                <h3>Serviços financeiros</h3>
                 <p>
-                  Sabemos o quanto nossos equipamentos pessoais e de trabalho
-                  são importantes para nossa vida! Por isso contamos também com
-                  seguro para celular, notebooks e outros equipamentos!
+                  Nossa corretora oferece uma variedade de serviços financeiros
+                  para atender todas suas necessidades. Desde financiamentos
+                  para aquisição de bens até consórcios para quem planeja seu
+                  futuro além de contar com opções de crédito para os momentos
+                  que mais precisa!
                 </p>
               </div>
             </a>
-            <a
+            <!-- <a
               href="https://wwws.portoseguro.com.br/seguroapviagem/iniciocotacaoseguroviagem.ns?susepWebSeguroViagem=8816WJ&codigoOperacao=20-A"
               class="card"
               id="card-clicavel"
@@ -291,11 +660,11 @@
               <div>
                 <img
                   id="icone-card"
-                  src="./assets/fundo-laranja-boneco-mala-viagem.png"
+                  src="./assets/fundo-laranja-desenho-cartao.png"
                   alt="Fundo laranja com desenho de um boneco, carregando malas. Seguro viagem, nacional e internacional."
                 />
 
-                <h3>Seguro Viagem</h3>
+                <h3>Cartao de crédito</h3>
                 <p>
                   Realizar sonhos sem a preocupação de correr riscos, nossos
                   especialistas podem lhe auxiliar a realizar todos eles!
@@ -321,7 +690,7 @@
                   iremos lhe auxiliar.
                 </p>
               </div>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
