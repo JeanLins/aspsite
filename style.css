@@ -900,20 +900,14 @@ footer .social-links {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .popup {
-    max-width: none; /* Remover a largura máxima */
-    width: 100%; /* Ocupar a largura total da tela */
-    margin: 0; /* Remover margens */
-  }
-}
+
 
 /* POPUP PRINCIPAL SMARTPHONE */
 
 @media screen and (max-width: 1023px) {
   .custom-popup h2 {
     position: fixed;
-    color: rgb(68, 0, 255);
+    color: var(--orange-asp);
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
@@ -1009,10 +1003,11 @@ footer .social-links {
 @media screen and (min-width: 1024px) {
   .custom-popup h2 {
     position: fixed;
-    color: red;
+    color: var(--orange-asp);
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
+    z-index: 10006;
   }
   .custom-popup {
     display: none;
@@ -1027,7 +1022,7 @@ footer .social-links {
 
   .custom-popup-content {
     display: flex;
-    min-width: 106vh;
+    min-width: 130vh;
     min-height: 80vh;
     max-height: 90vh;
 
@@ -1067,7 +1062,7 @@ footer .social-links {
     display: flex;
     flex-wrap: wrap;
     gap: 3.2rem;
-    margin: 2rem;
+    margin: 1rem;
     justify-content: space-between;
     flex: 1;
   }
@@ -1088,10 +1083,15 @@ footer .social-links {
   #services-interno .card p {
     text-align: justify;
     padding-top: 1rem;
+    font-size: 1.2rem;
   }
 
   #services-interno .card img {
-    max-width: 30%;
+    max-width: 20%;
+  }
+
+  #services-interno .card h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1111,7 +1111,7 @@ footer .social-links {
 
   #customPopup2 .custom-popup-content {
     display: flex;
-    min-width: 106vh;
+    min-width: 160vh;
     min-height: 40vh;
     max-height: 90vh;
 
