@@ -463,6 +463,10 @@ body.menu-expanded button path {
   text-align: justify;
 }
 
+#services .card #icone-card{
+  max-width: 45%;
+}
+
 #services header h2 {
   margin-bottom: 1rem;
 }
@@ -471,6 +475,11 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  
+}
+
+#services .cards a{
+  cursor: pointer;
 }
 
 #services .card {
@@ -906,13 +915,14 @@ footer .social-links {
 
 @media screen and (max-width: 1023px) {
   .custom-popup h2 {
+    font-size: 3vh;
     position: fixed;
     color: var(--orange-asp);
     left: 50%;
-    top: 20%;
+    top: 12%;
     transform: translate(-50%, -50%);
     z-index: 10005;
-    font-size: 2rem;
+    
   }
 
   .custom-popup {
@@ -927,8 +937,12 @@ footer .social-links {
   }
 
   .custom-popup-content {
+    min-width: 40vh;
+    max-width: 42vh;
+    min-height: 70vh;
+    
     position: fixed;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--brand-beige);
@@ -950,15 +964,14 @@ footer .social-links {
 
   #services-interno {
     text-align: justify;
-
-
-    max-height: 60vh;
-    max-width: 50vh;
+    max-height: 68vh;
+    max-width: 38vh;
     overflow-y: auto;
     padding: 1rem;
+    overflow-x:hidden;
   }
   #services-interno .cards {
-    min-width: 30vh;
+    min-width: 37vh;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -970,8 +983,9 @@ footer .social-links {
   }
 
   #services-interno .card {
-    max-width: 30vh;
-    width: 100%;
+    
+    max-width: 35vh;
+    
     flex-grow: 1;
     padding: 1.4rem;
     text-align: center;
@@ -983,18 +997,18 @@ footer .social-links {
   }
 
   #services-interno .card #icone-card{
-    max-width: 20%;
+    max-width: 10vh;
   }
 
   #services-interno .card p {
     text-align: justify;
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 2.2vh;
   }
 
   #services-interno .card h3 {
     
-    font-size: 1.2rem;
+    font-size: 2.3vh;
   }
 }
 
@@ -1002,6 +1016,7 @@ footer .social-links {
 
 @media screen and (min-width: 1024px) {
   .custom-popup h2 {
+    font-size: 4vh;
     position: fixed;
     color: var(--orange-asp);
     left: 50%;
@@ -1080,18 +1095,20 @@ footer .social-links {
     align-items: center;
   }
 
+  
+
   #services-interno .card p {
     text-align: justify;
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.8vh;
   }
 
-  #services-interno .card img {
-    max-width: 20%;
+  #services-interno .card #icone-card {
+    max-width: 10vh;
   }
 
   #services-interno .card h3 {
-    font-size: 1.5rem;
+    font-size: 2.1vh;
   }
 }
 
@@ -1111,7 +1128,7 @@ footer .social-links {
 
   #customPopup2 .custom-popup-content {
     display: flex;
-    min-width: 160vh;
+    min-width: 130vh;
     min-height: 40vh;
     max-height: 90vh;
 
@@ -1136,3 +1153,5 @@ footer .social-links {
     z-index: 10001;
   }
 }
+
+
